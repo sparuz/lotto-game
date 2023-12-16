@@ -26,7 +26,15 @@ Massimo numero di schedine giocabili min: 1, max: 5, 0: exit
 
 class Schedina {
     constructor(numbers, ruotaArray, typeArray) {
-        this.ruota = ruotaArray
+        if (Array.isArray(ruotaArray)) {
+            const ruote = ["Bari", "Cagliari", "Firenze", "Genova", "Milano", "Napoli", "Palermo", "Roma", "Torino", "Venezia", "tutte"]
+            const arrayIncludes = ruotaArray.every(ruota => ruote.map(curr => curr.toLowerCase()).includes(ruota.toLowerCase()))
+            if (arrayIncludes) {
+                this.ruota = ruotaArray
+            }else{
+                this.ruota = []
+            }
+        }
         this.type = typeArray
         this.numbers = numbers
         this.numbersSort = this.generateNumbers()
@@ -50,14 +58,14 @@ class Schedina {
     }
 
     displaySchedina(name = " ") {
-       
+
         let line = ""
-        if (this.numbersSort.length >= 1 && this.numbersSort.length <= 10 ){
+        if (this.numbersSort.length >= 1 && this.numbersSort.length <= 10) {
             const divider = "+==========================================================+"
             const title = `LOTTO GAME TICKET #${name}`
             const space = " "
             line += divider + "\n|" + space.repeat(19) + title + space.repeat(19) + "|\n"
-    
+
             const lengthRuote = this.ruota.join(" ").length
             line += divider + "\n|" + space.repeat(Math.floor((58 - lengthRuote) / 2)) + this.ruota.join(" ") + space.repeat(Math.ceil((58 - lengthRuote) / 2)) + "|\n"
             const lengthType = this.type.join(" ").length
@@ -66,12 +74,12 @@ class Schedina {
             const lengthNumbers = numbers.join("-").length
             line += divider + "\n|" + space.repeat(Math.floor((58 - lengthNumbers) / 2)) + numbers.join(" ") + space.repeat(Math.ceil((58 - lengthNumbers) / 2)) + "|\n"
             line += divider
-        }else{
+        } else {
             line += `You can't play with ${this.numbers} numbers`
         }
-    
+
         return line
-      
+
     }
 
 }
@@ -123,4 +131,3 @@ const createSchedina = (schedine) => {
     }
 
 }
-createSchedina(schedine)
