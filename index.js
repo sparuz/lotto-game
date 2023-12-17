@@ -20,11 +20,19 @@ class Schedina {
             const arrayIncludes = ruotaArray.every(ruota => ruote.map(curr => curr.toLowerCase()).includes(ruota.toLowerCase()))
             if (arrayIncludes) {
                 this.ruota = ruotaArray
-            }else{
+            } else {
                 this.ruota = []
             }
         }
-        this.type = typeArray
+        if (Array.isArray(typeArray)) {
+            const combination = ["Ambo", "Ambetto", "Terno", "Quaterna", "Cinquina"]
+            const arrayComb = typeArray.every(type => combination.map(curr => curr.toLocaleLowerCase()).includes(type.toLowerCase()))
+            if (arrayComb) {
+                this.type = typeArray
+            } else {
+                this.type = []
+            }
+        }
         this.numbers = numbers
         this.numbersSort = this.generateNumbers()
     }
