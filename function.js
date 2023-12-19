@@ -106,6 +106,18 @@ class Extraction {
         return numSort
     }
 
+    displayExtraction(){
+        let line = ""
+        const divider = "+==========================================================+"
+        const title = `LOTTO Extraction`
+        const space = " "
+        const keys = Object.keys(this.extraction)
+        line += divider + "\n|" + space.repeat((58 - title.length) / 2) + title + space.repeat((58 - title.length) / 2) + "|\n"
+        for(let key of keys){
+            line += divider + "\n|" + key + space.repeat(58 - this.extraction[key].join(" - ").length - key.length) + this.extraction[key].join(" - ") + "|\n"
+        }
+        return line + divider + "\n"
+    }
 }
 
 module.exports = {
