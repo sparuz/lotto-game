@@ -52,4 +52,4 @@ const createSchedina = (schedine) => {
 
 
 createSchedina(schedine)
-console.log(extraction1.extraction)
+console.log(extraction1.displayExtraction())
