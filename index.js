@@ -1,4 +1,4 @@
-const {Schedina, Extraction} = require("./function")
+const { Schedina, Extraction } = require("./function")
 
 const schedine =
 {
@@ -37,6 +37,7 @@ const schedine =
 const extraction1 = new Extraction()
 
 
+
 const createSchedina = (schedine) => {
 
     const keys = Object.keys(schedine)
@@ -52,4 +53,4 @@ const createSchedina = (schedine) => {
 
 
 createSchedina(schedine)
-console.log(extraction1.displayExtraction())
+console.log(extraction1.randomExtraction())
