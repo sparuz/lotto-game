@@ -2,3 +2,5 @@ node_modules/
 function.test.js
 package-lock.json
 package.json
+pseudo.md
+function copy.js
