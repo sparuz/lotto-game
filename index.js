@@ -1,4 +1,6 @@
-const { Schedina, Extraction } = require("./function")
+const {Schedina} = require("./src/schedina")
+const {Extraction} = require("./src/extraction")
+const {CheckWin}  = require("./src/checkwin")
 
 const schedine =
 {
