@@ -1,29 +1,24 @@
-const {Schedina} = require("./src/schedina")
-const {Extraction} = require("./src/extraction")
-const {CheckWin}  = require("./src/checkwin")
+// const { Schedina } = require("./src/classes/schedina")
+// const { Extraction } = require("./src/classes/extraction")
+// const { CheckWin } = require("./src/classes/checkwin")
+
+// // const extr = new Extraction()
+
+// // console.log(extr.randomExtraction())
 
 
-const schedina = new Schedina(10, ["Cagliari"], ["ambo", "quaterna", "terno"], 2)
+// const schedina = new Schedina
+//     (
+//         10,
+//         ["tutte"],
+//         ["Ambo", "Quaterna"],
+//         2
+//     )
+// console.log(schedina)
+// console.log(schedina.displaySchedina())
+// // let extractions = {}
+// const extraction = new Extraction()
+// console.log(extraction.displayExtraction())
+// // console.log(Object.hasOwn(extractions, "extraction"))
 
-
-const cw = new CheckWin
-    (
-        schedina,
-        {
-            Bari: [2, 31, 79, 9, 77],
-            Cagliari: [46, 90, 77, 58, 65],
-            Firenze: [69, 10, 11, 28, 50],
-            Genova: [46, 90, 51, 52, 23],
-            Milano: [25, 82, 56, 42, 4],
-            Napoli: [55, 62, 72, 25, 70],
-            Palermo: [61, 11, 88, 53, 47],
-            Roma: [2, 74, 53, 81, 22],
-            Torino: [81, 56, 51, 82, 54],
-            Venezia: [50, 56, 10, 46, 6],
-            tutte: [32, 22, 65, 51, 61]
-        }
-    )
-
-
-// console.log(cw.getPossibility())
-console.log(cw.checkCombination())
+// const newCheck = new CheckWin(schedina, extraction)
