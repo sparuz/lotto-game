@@ -1,4 +1,4 @@
-const {Schedina} = require("../classes/schedina")
+const {Schedina} = require("../lottoGame/schedina")
 
 const schedineData =
 {
