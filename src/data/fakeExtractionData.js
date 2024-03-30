@@ -1,6 +1,6 @@
-const { CheckWin } = require("../classes/checkwin")
-const { Extraction } = require("../classes/extraction")
-const { Schedina } = require("../classes/schedina")
+const { CheckWin } = require("../lottoGame/checkwin")
+const { Extraction } = require("../lottoGame/extraction")
+const { Schedina } = require("../lottoGame/schedina")
 
 const schedina = new Schedina(10, ["Cagliari"], ["ambo", "quaterna", "terno"], 2)
 const cw = new CheckWin
