@@ -1,6 +1,5 @@
 node_modules/
-package-lock.json
-package.json
 pseudo.md
 function copy.js
 function.js
+coverage/
