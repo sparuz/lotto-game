@@ -1,4 +1,4 @@
-# Lotto Game Project
+# Lotto Game
 
 ## Table of Contents
 
