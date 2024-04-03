@@ -107,7 +107,7 @@ class Lottogame {
             if (Object.hasOwn(this.extractions, "extraction")) {
                 for (let schedina of this.schedineGiocate) {
                     const newCheck = new CheckWin(schedina, this.extractions)
-                    newCheck.checkPriceWin(schedina)
+                    console.log(newCheck.checkPriceWin(schedina))
                 }
             } else {
                 console.log(`\x1b[31mYou need to generate extraction before`)

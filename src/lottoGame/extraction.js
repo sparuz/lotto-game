@@ -1,7 +1,20 @@
 class Extraction {
     constructor() {
         this.ruote = ["Bari", "Cagliari", "Firenze", "Genova", "Milano", "Napoli", "Palermo", "Roma", "Torino", "Venezia"]
+        //testing
         this.extraction = this.randomExtraction()
+        // this.extraction = {
+        //     bari: [10, 20, 30, 40, 50],
+        //     cagliari: [60, 24, 40, 50, 42],
+        //     firenze: [3, 20, 30, 40, 8],
+        //     genova: [9, 13, 38, 15, 63],
+        //     milano: [10, 57, 88, 37, 58],
+        //     napoli: [10, 20, 30, 40, 21],
+        //     palermo: [86, 62, 2, 9, 34],
+        //     roma: [19, 84, 80, 7, 35],
+        //     torino: [31, 1, 75, 25, 58],
+        //     venezia: [61, 26, 9, 63, 40]
+        // }
     }
 
     /**
