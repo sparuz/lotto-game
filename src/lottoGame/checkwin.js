@@ -90,7 +90,7 @@ class CheckWin {
         if (sum > 499.99) {
             sum -= sum * 0.08
             schedina.win += parseFloat(sum)
-            return `\x1b[32mYou have Win ${sum.toFixed(2)}€ net.`
+            return `\x1b[32mYou have Win ${sum.toFixed(2)}€ net`
         } else if (sum < 500 && sum > 0) {
             schedina.win += parseFloat(sum)
             return `\x1b[32mYou have Win ${sum.toFixed(2)}€`
